@@ -15,6 +15,6 @@ app.add_middleware(
 app.include_router(root)
 
 # Optionally, you can add a root endpoint for health checks
-@app.get("/")
+@app.get("/test")
 async def read_root():
     return {"message": "Welcome to the Task Manager API"}
